@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap");
 
 * {
     margin: 0;
@@ -16,7 +16,7 @@ body {
 
 h1,
 h2 {
-    font-family: oswald, sans-serif;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
@@ -55,4 +55,37 @@ h2 {
 
 .active {
     border-bottom: 1px solid #3a3a3a;
+}
+
+/* hero-image */
+
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url(/assets/images/hero-image.webp) no-repeat center center;
+
+    /* animates zoom effect on loading oage */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+
+/* creates the level of zoom for hero image */
+@keyframes hero-zoom {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1.1)
+    }
+
 }
