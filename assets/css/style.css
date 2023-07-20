@@ -9,7 +9,7 @@
 body {
     font-family: Lato, sans-serif;
     font-weight: 300;
-    color: #3a3a3a
+    color: #3a3a3a;
 }
 
 /* headings and logo */
@@ -58,7 +58,7 @@ h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero-image and cover text*/
+/* hero image and cover text */
 
 
 #hero-outer {
@@ -80,7 +80,7 @@ h2 {
     width: 100%;
     background: url(/assets/images/hero-image.webp) no-repeat center center;
 
-    /* animates zoom effect on loading oage */
+    /* animates zoom effect on loading page */
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -90,11 +90,11 @@ h2 {
 /* creates the level of zoom for hero image */
 @keyframes hero-zoom {
     from {
-        transform: scale(1)
+        transform: scale(1);
     }
 
     to {
-        transform: scale(1.1)
+        transform: scale(1.1);
     }
 
 }
@@ -120,7 +120,7 @@ h2 {
     position: absolute;
 }
 
-/* club ethos*/
+/* club ethos */
 
 #club-ethos {
     height: 600px;
@@ -197,7 +197,7 @@ hr {
     border-radius: 50%;
 }
 
-/* event times*/
+/* event times */
 
 #times {
     background-image: url('../images/dublin-city.webp');
@@ -234,7 +234,7 @@ footer {
     text-align: center;
 }
 
-.social-networks li {
+.social-networks>li {
     display: inline;
 }
 
@@ -243,4 +243,18 @@ footer {
     margin: 1%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+
+/* gallery */
+
+#photos {
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
+}
+
+#photos>img {
+    width: 100%;
 }
